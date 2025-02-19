@@ -11,6 +11,11 @@ const Title = styled.h1`
   font-size: 4rem;
 `
 
+const fontSizeLarge = '3rem'
+const Subtitle = styled.h2`
+  font-size: ${fontSizeLarge};
+`
+
 const Link = styled.a`
   color: blue;
   :hover {
@@ -38,6 +43,7 @@ function App() {
       <GlobalStyle />
       <div className="container">
         <Title>Styled Components Playground</Title>
+        <Subtitle>Sub Title</Subtitle>
         <p>
           <Link href="/">Sample Link</Link>
         </p>
