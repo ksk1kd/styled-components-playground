@@ -1,4 +1,11 @@
 import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+  }
+`
 
 const Title = styled.h1`
   font-size: 4rem;
@@ -28,6 +35,7 @@ const Paragraph = styled.p<{ $fontSize?: 'small' | 'medium' }>`
 function App() {
   return (
     <>
+      <GlobalStyle />
       <div className="container">
         <Title>Styled Components Playground</Title>
         <p>
